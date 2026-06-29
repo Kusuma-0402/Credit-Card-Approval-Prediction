@@ -8,8 +8,8 @@
     <div class="col-xl-5 col-lg-6">
         <div class="glass-card h-100">
             <div class="d-flex align-items-center gap-3 mb-4">
-                <div class="bg-light rounded-3 p-2 border border-secondary border-opacity-50" style="width: auto;">
-                    <i class="bi bi-person-badge text-cyan fs-3"></i>
+                <div class="panel-icon">
+                    <i class="bi bi-speedometer2"></i>
                 </div>
                 <div>
                     <h4 class="fw-bold mb-0">Underwriter Panel</h4>
@@ -70,7 +70,7 @@
                 </div>
 
                 <button type="submit" id="analyst-submit-btn" class="btn btn-glow w-100 py-3">
-                    <i class="bi bi-cpu-fill me-2"></i> Execute Risk Inference
+                    <i class="bi bi-activity me-2"></i> Execute Risk Inference
                 </button>
             </form>
         </div>
@@ -79,11 +79,14 @@
     <!-- Right Column: Decision Engine Workspace -->
     <div class="col-xl-7 col-lg-6">
         <div class="glass-card h-100 d-flex flex-column">
-            <h4 class="fw-bold mb-4">Underwriting Workspace</h4>
+            <h4 class="fw-bold mb-4 d-flex align-items-center gap-2">
+                <i class="bi bi-graph-up-arrow text-cyan"></i>
+                <span>Underwriting Workspace</span>
+            </h4>
             
             <!-- Default placeholder when no analysis has run -->
             <div id="workspace-placeholder" class="text-center my-auto py-5">
-                <i class="bi bi-speedometer text-secondary display-1 opacity-20 d-block mb-3"></i>
+                <i class="bi bi-clipboard-data text-secondary display-1 opacity-20 d-block mb-3"></i>
                 <h5 class="mt-3 text-dark">Awaiting Input Profile</h5>
                 <p class="text-secondary small mx-auto" style="max-width: 320px;">Submit the manual entry portfolio parameters on the left to initiate the automated ML scoring workflow.</p>
             </div>
@@ -104,8 +107,8 @@
                                 <circle id="gauge-circle" cx="50" cy="50" r="42" stroke="url(#analyst-gradient)" stroke-width="8" fill="none" stroke-dasharray="263.89" stroke-dashoffset="263.89" stroke-linecap="round" style="transition: stroke-dashoffset 1s ease-in-out; transform: rotate(-90deg); transform-origin: 50px 50px;" />
                                 <defs>
                                     <linearGradient id="analyst-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" stop-color="#06b6d4" />
-                                        <stop offset="100%" stop-color="#6366f1" />
+                                        <stop offset="0%" stop-color="#06B6D4" />
+                                        <stop offset="100%" stop-color="#1E293B" />
                                     </linearGradient>
                                 </defs>
                             </svg>
@@ -120,18 +123,21 @@
                 <div class="row g-3 mb-4">
                     <div class="col-sm-4">
                         <div class="metric-box">
+                            <i class="bi bi-cash-coin metric-icon"></i>
                             <div id="metric-dti" class="metric-value">0%</div>
                             <div class="metric-label">Debt-to-Income</div>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="metric-box">
+                            <i class="bi bi-speedometer metric-icon"></i>
                             <div id="metric-score" class="metric-value">300</div>
                             <div class="metric-label">CIBIL rating</div>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="metric-box">
+                            <i class="bi bi-briefcase metric-icon"></i>
                             <div id="metric-emp" class="metric-value">0.0y</div>
                             <div class="metric-label">Employment</div>
                         </div>

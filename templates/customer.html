@@ -8,8 +8,8 @@
         <div class="glass-card">
             <!-- Header section -->
             <div class="text-center mb-5">
-                <div class="d-inline-flex align-items-center justify-content-center bg-light rounded-circle p-3 mb-3 border border-secondary border-opacity-50" style="width: 76px; height: 76px;">
-                    <i class="bi bi-wallet2 text-cyan fs-2"></i>
+                <div class="panel-icon mx-auto mb-3">
+                    <i class="bi bi-shield-check"></i>
                 </div>
                 <h2 class="fw-extrabold display-6">Credit Pre-Screening Portal</h2>
                 <p class="text-secondary small mx-auto" style="max-width: 520px;">Provide your key financial and demographic details to perform an instant automated credit card screening leveraging our machine learning risk models.</p>
@@ -83,6 +83,7 @@
                 <!-- Action Button -->
                 <div class="mt-5 text-center">
                     <button type="submit" id="submit-btn" class="btn btn-glow w-100 py-3">
+                        <i class="bi bi-shield-lock me-2"></i>
                         <span id="btn-text">Run Security Assessment</span>
                         <span id="btn-spinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
                     </button>
@@ -100,9 +101,9 @@
                                 <circle id="gauge-circle" cx="50" cy="50" r="42" stroke="url(#risk-gradient)" stroke-width="7" fill="none" stroke-dasharray="263.89" stroke-dashoffset="263.89" stroke-linecap="round" style="transition: stroke-dashoffset 1.2s cubic-bezier(0.16, 1, 0.3, 1); transform: rotate(-90deg); transform-origin: 50px 50px;" />
                                 <defs>
                                     <linearGradient id="risk-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" stop-color="#06b6d4" />
-                                        <stop offset="50%" stop-color="#6366f1" />
-                                        <stop offset="100%" stop-color="#a855f7" />
+                                        <stop offset="0%" stop-color="#06B6D4" />
+                                        <stop offset="50%" stop-color="#1E293B" />
+                                        <stop offset="100%" stop-color="#F59E0B" />
                                     </linearGradient>
                                 </defs>
                             </svg>
@@ -126,11 +127,11 @@
                         <div class="p-3 bg-light rounded-3 border border-secondary border-opacity-35 mb-4">
                             <div class="row g-3">
                                 <div class="col-6">
-                                    <span class="text-secondary small d-block">DECISION</span>
+                                    <span class="text-secondary small d-block"><i class="bi bi-clipboard-check me-1"></i>DECISION</span>
                                     <span id="decision-status" class="fw-bold text-dark fs-5">-</span>
                                 </div>
                                 <div class="col-6">
-                                    <span class="text-secondary small d-block">RISK LEVEL</span>
+                                    <span class="text-secondary small d-block"><i class="bi bi-shield-lock me-1"></i>RISK LEVEL</span>
                                     <span id="risk-level-status" class="fw-bold text-dark fs-5">-</span>
                                 </div>
                             </div>
